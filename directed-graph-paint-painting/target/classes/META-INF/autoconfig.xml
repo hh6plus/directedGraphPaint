@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autoconfig>
+    <template-resources>
+        <!--log4j-->
+        <resource template="log4j2.xml.vm" target="log4j2.xml"/>
+
+    </template-resources>
+</autoconfig>

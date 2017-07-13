@@ -1,0 +1,5 @@
+test/hh6plus/saving/model/BaseModel.class
+test/hh6plus/saving/service/impl/StorageServiceImpl.class
+test/hh6plus/saving/service/IStorageService.class
+test/hh6plus/saving/model/Steward.class
+test/hh6plus/saving/model/SavingModel.class

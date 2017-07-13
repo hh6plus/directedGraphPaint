@@ -1,0 +1,5 @@
+test/hh6plus/painting/service/impl/PaintingService.class
+test/hh6plus/painting/model/StateEnum.class
+test/hh6plus/painting/service/IPaintingService.class
+test/hh6plus/painting/model/PaintingModel.class
+test/hh6plus/web/controller/ApiAliveController.class

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="info">
+
+    <appenders>
+
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %t %-5level %logger{30}.%method - %msg%n" />
+        </Console>
+
+        <!--XMDFile异步磁盘日志配置示例-->
+        <!--默认按天&按512M文件大小切分日志，默认最多保留30个日志文件, 改为最多保留50个日志文件。-->
+        <XMDFile name="rootAppender" fileName="root.log" xmdFilePath="/opt/logs/mobile/directed-graph-paint-web" rolloverMax="50" addAppkeyToFilePath="false"/>
+        <XMDFile name="errorAppender" fileName="error.log" xmdFilePath="/opt/logs/mobile/directed-graph-paint-web" rolloverMax="50"  addAppkeyToFilePath="false" />
+        <XMDFile name="warnAppender" fileName="warn.log" xmdFilePath="/opt/logs/mobile/directed-graph-paint-web" rolloverMax="50"  addAppkeyToFilePath="false" />
+        <XMDFile name="serviceAppender" fileName="service.log" xmdFilePath="/opt/logs/mobile/directed-graph-paint-web"  rolloverMax="50"  addAppkeyToFilePath="false" />
+
+    </appenders>
+
+    <loggers>
+
+        <logger name="warn" level="WARN" additivity="true">
+            <appender-ref ref="warnAppender" />
+        </logger>
+        <logger name="error" level="ERROR" additivity="true">
+            <appender-ref ref="errorAppender" />
+        </logger>
+        <logger name="service" level="DEBUG" additivity="true">
+            <appender-ref ref="serviceAppender" />
+        </logger>
+
+        <root level="INFO">
+            <appender-ref ref="rootAppender" />
+            <appender-ref ref="Console" />
+        </root>
+
+    </loggers>
+</configuration>

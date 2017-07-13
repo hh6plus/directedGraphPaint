@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>test.hh6plus</groupId>
+    <artifactId>directed-graph-paint</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>directed-graph-paint-saving</module>
+        <module>directed-graph-paint-painting</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <!-- Maven 自带的中央仓库使用的Id为central 如果其他的仓库声明也是用该Id 就会覆盖中央仓库的配置 -->
+            <id>mvnorgrepository</id>
+            <name>mvnorgrepository</name>
+            <url>http://www.mvnrepository.com/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>hh6plus-nexus-releases</id>
+            <url>file:///Users/huhong02/testspace/mavenRelease/</url>
+        </repository>
+        <snapshotRepository>
+            <id>hh6plus-nexus-releases</id>
+            <url>file:///Users/huhong02/testspace/mavenSnapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
