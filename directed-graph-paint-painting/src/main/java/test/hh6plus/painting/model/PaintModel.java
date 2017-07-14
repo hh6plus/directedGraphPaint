@@ -7,9 +7,9 @@ import java.util.Set;
 /**
  * Created by huhong02 on 17/7/12.
  */
-public class PaintingModel extends BaseModel {
+public class PaintModel extends BaseModel {
     private StateEnum state;
-    private Set<PaintingModel> paintingModelSet;
+    private Set<PaintModel> paintModelSet;
 
     public StateEnum getState() {
         return state;
@@ -19,12 +19,12 @@ public class PaintingModel extends BaseModel {
         this.state = state;
     }
 
-    public Set<PaintingModel> getPaintingModelSet() {
-        return paintingModelSet;
+    public Set<PaintModel> getPaintModelSet() {
+        return paintModelSet;
     }
 
-    public void setPaintingModelSet(Set<PaintingModel> paintingModelSet) {
-        this.paintingModelSet = paintingModelSet;
+    public void setPaintModelSet(Set<PaintModel> paintModelSet) {
+        this.paintModelSet = paintModelSet;
     }
 
 }

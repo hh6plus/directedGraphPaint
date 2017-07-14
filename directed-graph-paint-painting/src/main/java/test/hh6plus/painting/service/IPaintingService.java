@@ -1,7 +1,8 @@
 package test.hh6plus.painting.service;
 
-import test.hh6plus.painting.model.PaintingModel;
+import test.hh6plus.painting.model.PaintModel;
 
+import java.io.File;
 import java.util.Map;
 
 /**
@@ -9,7 +10,7 @@ import java.util.Map;
  */
 public interface IPaintingService {
 
-    PaintingModel getModelTobePainted(String appkey, Map<String, PaintingModel> resultMap);
+    PaintModel getModelTobePainted(String appkey, Map<String, PaintModel> resultMap);
 
-    void getPic(String appkey);
+    File getPic(String appkey);
 }
